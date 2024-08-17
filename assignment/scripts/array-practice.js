@@ -45,13 +45,14 @@ console.log("Second animal is", secondAnimal);
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
-let lastAnimal = animalArray[animalArray.length - 1] ;
-console.log(lastAnimal);
+let lastAnimal=animalArray[3]
+console.log("Last Animal is:", lastAnimal);
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
 
-
+ lastAnimal = animalArray[animalArray.length - 1] ;
+console.log("Last Animal is",  lastAnimal);
 
 // Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -59,6 +60,7 @@ console.log('--- 4. Adding and removing array items ---');
 // Example: Add an animal to the end of an array using the Array.push method.
 let animalToPush = 'penguin';
 animalArray.push(animalToPush);
+console.log(animalToPush);
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Create a variable `dessert` and assign it a string value of
@@ -67,11 +69,13 @@ console.log('Added an animal to end,', animalArray);
 //      array. (How can you be 100% certain this worked? 🤔)
 let dessert = "Apple Pie"
 favoriteFoods.push(dessert);
+console.log(dessert);
 console.log("added a dessert,", favoriteFoods);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
 animalArray.unshift(animalToUnshift);
+console.log(animalToUnshift)
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
@@ -79,12 +83,13 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
 let entree = "Lasagna"
 favoriteFoods.unshift(entree);
+console.log(entree);
 console.log(`added an entree to the beginning: ${favoriteFoods}`);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
-console.log('Removed the last animal', removedAnimal);
-console.log('The animals are now', animalArray);
+console.log('Removed the last animal:', removedAnimal);
+console.log('The animals are now:', animalArray);
 
 // NOTE: Use the `colors` array for 4.c and 4.d.
 let colors = ['orange', 'yellow', 'green', 'teal'];
@@ -96,7 +101,7 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
 let lastColor = colors.pop();
-console.log("Removed last color", lastColor);
+console.log("Removed last color:", lastColor);
 console.log("Colors are now:", colors);
 
 
@@ -121,11 +126,16 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
+console.log(gems);
+gems[1] = 'Tourmaline';
+console.log(gems);
 
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
-
+console.log(gems);
+gems.sort().reverse();
+console.log(gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
