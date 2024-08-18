@@ -76,7 +76,7 @@ console.log("added a dessert,", favoriteFoods);
 let animalToUnshift = 'walrus';
 animalArray.unshift(animalToUnshift);
 console.log(animalToUnshift)
-console.log(`Added an animal to beginning: ${animalArray}`);
+console.log(`added an animal to beginning:, ${animalArray}`);
 
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
